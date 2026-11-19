@@ -57,6 +57,7 @@ for i, col in enumerate(cols, start=1): #cols是一个列表，里面是四个�
     plt.ylabel('Number of samples')
     plt.legend()
 
+plt.tight_layout()  # 自动调整四块子图的间距，避免上面的标题压住下面的坐标轴标签
 plt.savefig('figures/feature_histograms.png')
 plt.show()
 
